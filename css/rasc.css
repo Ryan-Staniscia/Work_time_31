@@ -1,0 +1,137 @@
+.topnav{
+    overflow:hidden;
+    /*background-color: rgb(80, 113, 79);*/
+    border-radius: 15px;
+    font-family: Helvetica, bold;
+}
+
+.topnav a {     /* Barra que fica os links*/
+    float: left;
+    display: block;
+    text-align: center;   
+    padding: 12px 14px;
+    text-decoration: none; 
+}
+
+.topnav a:hover {
+   /* background-color: #000000; */  
+    color: #000000;  
+}
+
+nav a::after{
+    content: ""; /* cria uma linha*/
+    position: absolute;
+    width: 0%; /*começa invisivel*/
+    height: 2px;
+    bottom: -4px; /*posição da linha*/
+    left: 0;
+    background-color:rgb(156, 156, 160); /*cor da linha ao passar o mouse*/
+    -o-trasnsition-delay: 0.3s ease; /* linda da linha*/
+}
+
+nav a {
+    color: rgba(94, 6, 145, 0.849); /* Cor do texto dos links */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    font-size: 20px; /* Tamanho da fonte padrão */
+    position: relative; /* Necessário para usar o ::after */
+    transition: color 0.6s ease; /* Transição suave na mudança de cor */
+    left: 660px;
+}
+
+nav ul {
+    display: flex; /* Organiza os itens da lista em linha */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap:  10px; /* Espaço entre os links */
+    list-style: none;
+    padding: 50;                     /* Remove os marcadores de lista */  
+}
+
+nav {
+     margin-top: 20px;
+}
+
+
+
+.coluna::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column{
+    margin-top: 15px;
+    float: left;
+    width: 33.33%;
+}
+
+
+
+footer{
+    background-color:  #f1f1f1;
+    text-align: center;
+    padding: 10 px;
+    margin-top: 50px;
+}
+
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+img{
+    border-radius: 50%;
+}
+header{
+    background-color: brown;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0,0,0,1);
+}
+
+.box{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+
+.coluna {
+    display: flex;                /* Ativa o Flexbox */
+    justify-content: space-between; /* Espaça as colunas igualmente */
+    flex-wrap: wrap;             /* Permite que as colunas quebrem para a próxima linha em telas menores */
+    gap: 20px;
+    padding: 30;                   /* Espaço entre as colunas */
+}
+
+.column {
+    flex: 1;                     /* Cada coluna tenta ocupar o mesmo espaço */
+    min-width: 20px;            /* Garante uma largura mínima antes de quebrar para a próxima linha */
+    padding: 35px;               /* Espaço interno */
+    background-color: #f7f0f0;   /* Fundo branco individual (opcional) */
+    border-radius: 20px;          /* Arredonda as bordas */
+    box-shadow: 6px 8px 10px rgba(0,0,0,0.1); /* Leve sombra para destaque */
+}
+a[href ^="paginaR.html"]{
+    box-shadow: 0 4px 0px rgb(247, 16, 16);
+    padding: 5px;
+}
+a[href ^="paginaJ.html"]{
+    box-shadow: 0 4px 0px green;
+    padding: 5px;
+}
+
+a[href ^="paginaE.html"]{
+    box-shadow:0 4px 0px blue;
+    padding: 5px;
+}
+a[href ^="paginaF.html"]{
+    box-shadow:0 4px 0px yellow;
+    padding: 5px;
+}
+a[href ^="paginaL.html"]{
+    box-shadow:0 4px 0px pink;
+    padding: 5px;
+}
